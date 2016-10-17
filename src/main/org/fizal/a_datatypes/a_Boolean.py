@@ -3,5 +3,8 @@
 # 2. Data Type
 # 3. Value
 
-x = str()
-print dir(x)  # to see all the methods and variables defined in an object
+vNone = None  # like void
+vTrue = True
+vFalse = False
+print(vTrue == 1)
+print(vFalse == '2')
