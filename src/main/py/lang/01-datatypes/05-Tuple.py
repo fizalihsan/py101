@@ -3,6 +3,8 @@
 # definition
 tuple1 = ()  # immutable empty tuple
 print tuple1  # ()
+tuple1 = tuple()  # explicit definition
+print tuple1
 tuple1 = (1, 2.0, 'c')
 print tuple1  # (1, 2.0, 'c')
 

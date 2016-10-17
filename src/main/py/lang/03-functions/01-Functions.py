@@ -36,3 +36,34 @@ def func3():
 
 
 func3()
+
+
+def function_with_default_param_value(name='fizal'):  # method parameter with default value
+    print 'Hello %s' % name
+
+
+function_with_default_param_value()  # prints 'Hello fizal'
+function_with_default_param_value('Ihsan')  # prints 'Hello Ihsan'
+
+
+def function_within_function():
+    def func_inside(num):
+        def isEven(num):
+            return num % 2 == 0
+
+        return (num + 1) if isEven(num) else (num + 2)
+
+    print func_inside(3)
+    print func_inside(4)
+
+
+function_within_function()
+
+
+def function_calling_with_named_args(name, age):
+    print 'Name = %s Age = %d' % (name, age)
+
+
+function_calling_with_named_args('fizal', 20)
+function_calling_with_named_args(name='mohamed', age=20)
+function_calling_with_named_args(age=20, name='ihsan')  # with named args, order can be changed

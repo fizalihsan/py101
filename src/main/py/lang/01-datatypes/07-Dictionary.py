@@ -1,6 +1,8 @@
 # ----------------- Definition -----------------
 dict1 = {}  # empty dictionary
 print dict1  # {}
+dict1 = dict()  # empty dictionary
+print dict1  # {}
 dict1 = {"a": 1, "b": 2}
 print dict1.keys()
 print dict1.values()
@@ -8,7 +10,7 @@ print dict1.values()
 # setters
 dict1["c"] = 3
 dict2 = {"e": 7, "f": 8}
-dict1.update(dict2) # this is like putAll(Map) in Java
+dict1.update(dict2)  # this is like putAll(Map) in Java
 
 # getters
 print dict1["a"]  # if key does not exist, KeyError is thrown
@@ -39,4 +41,3 @@ print type(dict1.items())  # <type 'list'>
 # converting list of tuples into a dict
 t = [('a', 0), ('c', 2), ('b', 1)]
 print dict(t)  # {'a': 0, 'c': 2, 'b': 1}
-

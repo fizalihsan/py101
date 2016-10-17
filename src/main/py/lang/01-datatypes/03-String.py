@@ -7,8 +7,10 @@ str3 = """How
 are
 you?
 """
+str4 = str('welcome')  # explicit definition
 print(str1 + str2 + str3)  # string concatenation
 print str1[2]
+print str4
 
 # iterating
 for c in str1: print c  # printing characters
@@ -28,6 +30,7 @@ print str1 == str2
 str5 = "Hello"
 str6 = "Hello"
 print str5 is str6  # checks if both str5 and str6 both refer to the same object
+print isinstance(str1, str)
 
 # searching
 print name.__contains__('z')  # returns True

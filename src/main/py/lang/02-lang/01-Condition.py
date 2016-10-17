@@ -12,3 +12,7 @@ elif len(list1) == 1:
     print "Has 1 element only"
 else:
     print "Has more than 1 element"
+
+# Ternary operator
+
+print 'List is empty' if len(list1) == 0 else 'List is not empty'
