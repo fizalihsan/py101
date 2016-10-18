@@ -64,6 +64,8 @@ def function_calling_with_named_args(name, age):
     print 'Name = %s Age = %d' % (name, age)
 
 
+# 'fizal' and 20 are called 'positional arguments' since it doesn't have a parameter name
 function_calling_with_named_args('fizal', 20)
+# in the below example, they are called 'keyword arguments'
 function_calling_with_named_args(name='mohamed', age=20)
 function_calling_with_named_args(age=20, name='ihsan')  # with named args, order can be changed

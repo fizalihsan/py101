@@ -4,7 +4,7 @@ from src.main.org.fizal.d_classes.Point import Point
 print "@@@@@@@", type(Point)
 print Point  # __main__.Point
 p = Point()  # creating a new instance of Point
-print p  # <__main__.Point instance at 0x00000000021F02C8>
+print p  # <src.main.org.fizal.d_classes.Point.Point instance at 0x00000000021F02C8> if __str__ is not implemented
 print p.x  # returns 0
 print p.get_x()  # returns 0
 print p.get_y()  # returns 0

@@ -21,5 +21,8 @@ else:
 # or operator
 print list_size < 0 or list_size < 10
 
-# Ternary operator
+# Ternary operator or Conditional Expression
 print 'List is empty' if list_size == 0 else 'List is not empty'
+
+# assert statement
+assert list_size == 2 # AssertionError is thrown when not satisfied
