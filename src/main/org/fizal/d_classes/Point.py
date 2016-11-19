@@ -42,10 +42,9 @@ class Point:
     def __str__(self):
         return 'x=%.2d y=%.2d' % (self.x, self.y)
 
-    # def __eq__(self, other):
-    #     """Override the default equals behavior"""
-    #     if isinstance(other, self.__class__):
-    #         return self.__dict__ == other.__dict__
-    #
-    #     return False
-
+        # def __eq__(self, other):
+        #     """Override the default equals behavior"""
+        #     if isinstance(other, self.__class__):
+        #         return self.__dict__ == other.__dict__
+        #
+        #     return False

@@ -23,4 +23,4 @@ print count  # Counter({'r': 2, 'a': 1, 'p': 1, 't': 1, 'o': 1})
 # ------------------Named tuple------------------
 Point = namedtuple('Point', ['x', 'y'])
 p = Point(x=10, y=20)
-print p # Point(x=10, y=20)
+print p  # Point(x=10, y=20)

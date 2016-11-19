@@ -25,4 +25,5 @@ def avoids(word, forbidden):
     """word avoids forbidden if there are not any forbidden letters in word"""
     return not any(letter in forbidden for letter in word)
 
+
 print avoids('Fizal', 'xyz')

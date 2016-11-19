@@ -35,6 +35,7 @@ print histogram(tuple(list1))  # {'a': 1, 'c': 2, 'b': 2}
 # In Python, interface and abstract class are one and the same
 # Python supports multiple inheritance
 import collections
+
 collections.Set
 
 # ---------------------------Duck typing---------------------------

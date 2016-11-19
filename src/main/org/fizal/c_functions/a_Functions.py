@@ -48,10 +48,10 @@ function_with_default_param_value('Ihsan')  # prints 'Hello Ihsan'
 
 def function_within_function():
     def func_inside(num):
-        def isEven(num):
+        def is_even(num):
             return num % 2 == 0
 
-        return (num + 1) if isEven(num) else (num + 2)
+        return (num + 1) if is_even(num) else (num + 2)
 
     print func_inside(3)
     print func_inside(4)

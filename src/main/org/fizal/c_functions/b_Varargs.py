@@ -1,20 +1,22 @@
 from src.main.org.fizal.d_classes.Point import Point
+
+
 # -------------------------Gather-------------------------
-def printall(*args):
+def print_all(*args):
     print type(args)  # tuple
     for arg in args:
         print arg
 
 
-printall(1, 2, 3, 4)  # all the args are 'gathered' as single arg
+print_all(1, 2, 3, 4)  # all the args are 'gathered' as single arg
 
 
 # to gather keywords
-def printall_with_keywords(*args, **kwargs):
+def print_all_with_keywords(*args, **kwargs):
     print args, kwargs
 
 
-printall_with_keywords(1, 2, a=3, c=4)
+print_all_with_keywords(1, 2, a=3, c=4)
 
 
 # -------------------------Scatter-------------------------
@@ -24,10 +26,10 @@ def scatter(a, b, c):
     print c
 
 
-tuple = (4, 5, 6)
-scatter(*tuple)  # all the args are 'scattered into multiple args here
+tuple1 = (4, 5, 6)
+scatter(*tuple1)  # all the args are 'scattered into multiple args here
 
 # Scatter operator **
 d = dict(x=1, y=2)
 p = Point(**d)
-print p # x=01 y=02
+print p  # x=01 y=02

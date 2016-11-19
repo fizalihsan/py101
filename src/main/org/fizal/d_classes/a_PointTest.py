@@ -18,5 +18,3 @@ print p.get_y()
 
 # p = Point(x=-1, y=-2)  # ArithmeticError is thrown
 # p = Point(101, 101)  # ArithmeticError is thrown
-
-
