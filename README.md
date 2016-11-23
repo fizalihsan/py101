@@ -5,8 +5,8 @@ This repository contains all the programs I wrote while learning Python.
 * Boolean: Simplified chained comparison
 * Boolean: Ternary operator or conditional expression
 * String: slicing
-* List: List comprehension (with filter)
-* List: generator expression
+* Collection: List/Set/Dict comprehension with optional filter
+* Collection: generator expression
 * Collection: freezeset (immutable set)
 * Collection: zip, counter, namedtuple
 * Function: scoping

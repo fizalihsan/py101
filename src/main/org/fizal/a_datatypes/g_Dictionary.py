@@ -33,6 +33,10 @@ for v in dict1.values():
 for k, v in dict1.items():
     print "key = %s value = %s" % (k, v)
 
+# dictionary comprehension
+invert = {v: k for k, v in dict1.items()}
+print invert
+
 # type
 print type(dict1.keys())  # <type 'list'>
 print type(dict1.values())  # <type 'list'>

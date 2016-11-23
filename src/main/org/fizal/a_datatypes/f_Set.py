@@ -21,3 +21,11 @@ print set1 == set2  # True
 print 1 in set2  # True
 print type(set1) == type(set())  # True, don't use this to compare types
 print isinstance(set1, set)  # True
+
+# iteration
+for i, x in enumerate(set2):
+    print i, x
+
+# set comprehension
+set4 = {x + 1 for x in set1}
+print set4

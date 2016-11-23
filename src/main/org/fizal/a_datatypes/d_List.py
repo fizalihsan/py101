@@ -49,6 +49,10 @@ print [c.capitalize() for c in list4]  # ['F', 'I', 'Z', 'A', 'L']
 # with condition
 print [c.capitalize() for c in list4 if c in ('a', 'e', 'i', 'o', 'u')]  # ['I', 'A']
 
+# nested list comprehension
+nested_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print [[x + 1 for x in sub_list] for sub_list in nested_list]
+
 # ------------------------Generator expressions------------------------
 # Generator expressions are similar to list comprehensions, but with parentheses instead of square brackets.
 # The result is a generator object that knows how to iterate through a sequence of values.

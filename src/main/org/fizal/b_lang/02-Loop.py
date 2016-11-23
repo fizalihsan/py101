@@ -10,9 +10,13 @@ for x in range(4, 0, -1):
 
 # Enumerate
 # iterate a collection with index of the elements
-list1 = [1, 2, 3]
+list1 = [1, 2, 3, 4, 5, 6]
 for index, element in enumerate(list1):
     print("%d : %d" % (index, element))
+
+for index, element in enumerate(list1, start=3):
+    print("%d : %d" % (index, element))
+
 
 # filter pattern?
 result = [(element + 1) for element in list1 if element >= 2]
