@@ -1,4 +1,30 @@
-from src.main.org.fizal.d_classes.Point import Point
+class Point:
+    def __init__(self, x=0, y=0):  # Overloaded constructor
+        if x < 0 or x > 100:
+            raise ArithmeticError
+
+        self.x = x
+        self.y = y
+        return
+
+    def get_x(self):
+        return self.x
+
+    def get_y(self):
+        return self.y
+
+    def get_z(self):
+        return self.z
+
+    def __str__(self):
+        return 'x=%.2d y=%.2d' % (self.x, self.y)
+
+        # def __eq__(self, other):
+        #     """Override the default equals behavior"""
+        #     if isinstance(other, self.__class__):
+        #         return self.__dict__ == other.__dict__
+        #
+        #     return False
 
 
 # -------------------------Gather-------------------------
