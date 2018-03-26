@@ -12,6 +12,12 @@ print(str1 + str2 + str3)  # string concatenation
 print str1[2]
 print str4
 
+# string types
+unicode_string = u'unicode string'
+raw_string = r'raw string'
+print unicode_string
+print raw_string
+
 # iterating
 for c in str1: print c  # printing characters
 

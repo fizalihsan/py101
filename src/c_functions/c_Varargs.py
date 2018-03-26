@@ -39,10 +39,15 @@ print_all(1, 2, 3, 4)  # all the args are 'gathered' as single arg
 
 # to gather keywords
 def print_all_with_keywords(*args, **kwargs):
+    """ The * in args tell python to collect all the arguments passed in and put them in args"""
+    _, arg2 = args
+    print arg2
+    print type(args)  # <type 'tuple'>
+    print _  # '_' denotes an anonymous variable. prints the 1st argument
     print args, kwargs
 
 
-print_all_with_keywords(1, 2, a=3, c=4)
+print_all_with_keywords(1, 2, a=5, c=6)
 
 
 # -------------------------Scatter-------------------------
